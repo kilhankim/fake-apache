@@ -1,0 +1,12 @@
+{
+  "cloudwatch.endpoint": "monitoring.ap-northeast-2.amazonaws.com",
+  "cloudwatch.emitMetrics": true,
+  "firehose.endpoint": "firehose.ap-northeast-2.amazonaws.com",
+  
+  "flows": [
+    {
+      "filePattern": "/var/log/aws-kinesis-agent/*access_log*",
+      "deliveryStream": "web-log-ingestion-stream"
+    }
+  ]
+}
